@@ -30,6 +30,10 @@ public class DistribuirEscolha27 implements DistribuirAtributosIniciais {
         return this.atributos;
     }
 
+    public Integer getPontosDisponiveis() {
+        return pontosDisponiveis;
+    }
+
     public Integer setAtributo(String atributo, Integer valor) {
         if(!atributos.containsKey(atributo))
             throw new IllegalArgumentException("Atributo inválido");
